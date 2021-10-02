@@ -94,9 +94,9 @@ main {
         position: relative;
         img {
           display: block;
+          object-fit: cover;
           width: 100%;
-          height: auto;
-          overflow: hidden;
+          height: 230px;
         }
         .curve {
           display: block;

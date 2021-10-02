@@ -5,7 +5,6 @@ export const httpClient = axios.create({
 });
 
 httpClient.interceptors.request.use(function (config) {
-  config.headers.Authorization =
-    "Client-ID ZQHR8VOlUDxW75jVNO0aZX6m5GnHKBeRzus2qCB-Ra8";
+  config.headers.Authorization = `Client-ID ${process.env.UNSPLASH_CLIENTID}`;
   return config;
 });
